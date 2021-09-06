@@ -8,7 +8,7 @@ I looks like this:
 
 [![Example](./example/images/shallow_reactive.png)](https://dtinth.github.io/api-documenter-yaml-to-antora-asciidoc/)
 
-It use it in my projects:
+I use it in my projects:
 
 [![Example](https://ss.dt.in.th/api/screenshots/docs-shell-tester__api__shell-tester_ShellSession_class.png)](https://docs.dt.in.th/shell-tester/api/shell-tester_ShellSession_class.html)
 
