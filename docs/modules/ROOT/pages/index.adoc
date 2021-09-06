@@ -41,3 +41,26 @@ image::https://github.com/dtinth/api-documenter-yaml-to-antora-asciidoc/raw/mast
   ** It follows https://docs.antora.org/antora/2.3/[Antora]’s folder and file structures, so that it can be easily used with Antora.
 . https://antora.org/[*Antora*] is used to generate `.html` files.
   * It is a multi-repository documentation generator. It can be used to generate a single documentation site for multiple projects.
+
+== Usage
+
+Assuming that you have already https://api-extractor.com/pages/setup/generating_docs/[generated] the YAML files using https://api-extractor.com/pages/commands/api-documenter_yaml/[`api-documenter yaml`] command, run the following command to generate the AsciiDoc files
+
+ $ npx api-documenter-yaml-to-antora-asciidoc asciidoc -i <input-dir>
+
+…where `<input-dir>` is the directory that contains the `.yml` files.
+
+This will generate the AsciiDoc pages in `docs/modules/api/pages`.
+
+=== Navigation
+
+It will also generate a https://docs.antora.org/antora/2.3/navigation/files-and-lists/[navigation file] at `docs/modules/api/nav.adoc` file that lists the pages in the documentation.
+
+You can then add this navigation file to your Antora project:
+
+[source,yaml]
+----
+nav:
+  - modules/api/nav.adoc <1>
+----
+<1> Add this line

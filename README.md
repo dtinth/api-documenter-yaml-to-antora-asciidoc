@@ -1,13 +1,17 @@
-# heft-node-basic-tutorial
+# api-documenter-yaml-to-antora-asciidoc
 
-This project folder demonstrates a sample configuration of the [Heft](https://www.npmjs.com/package/@rushstack/heft)
-build system. It illustrates a minimal realistic small project that targets the Node.js runtime.
+Finally, I found it. A documentation pipeline to generate API documentation for my TypeScript projects that works for me.
 
-The following tasks are configured:
+![Diagram](./docs/modules/ROOT/images/how-it-works.drawio.svg)
 
-- [TypeScript](https://rushstack.io/pages/heft_tasks/typescript/) compiler
-- [ESLint](https://rushstack.io/pages/heft_tasks/eslint/) coding style validator
-- [Jest](https://rushstack.io/pages/heft_tasks/jest/) test runner
+It looks like this:
 
-Please see the [Getting started with Heft](https://rushstack.io/pages/heft_tutorials/getting_started/)
-article for more information.
+[![Example](./example/images/shallow_reactive.png)](https://dtinth.github.io/api-documenter-yaml-to-antora-asciidoc/)
+
+It use it in my projects:
+
+[![Example](https://ss.dt.in.th/api/screenshots/docs-shell-tester__api__shell-tester_ShellSession_class.png)](https://docs.dt.in.th/shell-tester/api/shell-tester_ShellSession_class.html)
+
+For more information, check out the [project documention page](https://docs.dt.in.th/api-documenter-yaml-to-antora-asciidoc/index.html).
+
+[![Project documention page](https://ss.dt.in.th/api/screenshots/docs-api-documenter-yaml-to-antora-asciidoc__index.png)](https://docs.dt.in.th/api-documenter-yaml-to-antora-asciidoc/index.html)
