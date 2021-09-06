@@ -38,11 +38,12 @@ image::https://github.com/dtinth/api-documenter-yaml-to-antora-asciidoc/raw/mast
 
 >|2
 |https://api-extractor.com/[*@microsoft/api-extractor*]
-|Generates https://api-extractor.com/pages/setup/generating_docs/[“doc model”] (.api.json) files.
+|Generates https://api-extractor.com/pages/setup/generating_docs/[“doc model”] (.api.json) files (https://api-extractor.com/pages/overview/intro/[among other features]).
 
-* It describes the API surface of a TypeScript package.
-* Its https://www.npmjs.com/package/@microsoft/api-extractor-model[file format] is https://rushstack.io/pages/api/api-extractor-model/[defined by the api-extractor tool].
-* It does not specify how the documentation should be organized. i.e. it has no notion of pages and sections.
+* The doc model describes the API surface of a TypeScript package.
+** Its https://www.npmjs.com/package/@microsoft/api-extractor-model[data format] is https://rushstack.io/pages/api/api-extractor-model/[defined by the api-extractor tool].
+** It does not specify how the documentation should be organized. i.e. it has no notion of pages and sections.
+* It also validates the JSDoc comments and provides useful suggestions.
 * Maintained by Microsoft as part of the https://rushstack.io/[Rush Stack].
 
 >|3
@@ -50,9 +51,10 @@ image::https://github.com/dtinth/api-documenter-yaml-to-antora-asciidoc/raw/mast
 |Generates SDP YAML (.yml) files.
 
 * SDP stands for https://github.com/microsoft/rushstack/pull/2382#issuecomment-741327478[Schema-driven Document Processor], a documentation YAML format for use in Microsoft’s documentation pipeline.
-* It can also be https://api-extractor.com/pages/setup/generating_docs/#using-api-documenter-with-docfx[used] with the https://github.com/microsoft/rushstack/pull/2382#issuecomment-741327478[DocFX v3].
-* Unfortunately not much documentation is available for this format, but there is a https://github.com/microsoft/rushstack/blob/%40microsoft/api-documenter_v7.13.44/apps/api-documenter/src/yaml/ISDPYamlFile.ts[TypeScript definition file] and the examples are easy to parse.
-* It https://dotnet.github.io/docfx/spec/metadata_format_spec.html[specifies] the structure of the documentation — each metadata file would correspond to a page in the generated documentation.
+** It can also be https://api-extractor.com/pages/setup/generating_docs/#using-api-documenter-with-docfx[used] with the https://github.com/microsoft/rushstack/pull/2382#issuecomment-741327478[DocFX v3].
+** Unfortunately not much documentation is available for this format, but there is a https://github.com/microsoft/rushstack/blob/%40microsoft/api-documenter_v7.13.44/apps/api-documenter/src/yaml/ISDPYamlFile.ts[TypeScript definition file] and the examples are easy to parse.
+** It https://dotnet.github.io/docfx/spec/metadata_format_spec.html[specifies] the structure of the documentation — each metadata file would correspond to a page in the generated documentation.
+* Maintained by Microsoft as part of the https://rushstack.io/[Rush Stack].
 
 >|4
 |**api-documenter-yaml-to-antora-asciidoc** (this project!)

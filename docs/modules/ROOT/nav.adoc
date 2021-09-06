@@ -1,2 +1,3 @@
 * xref:index.adoc[About]
 * xref:usage.adoc[]
+* https://github.com/dtinth/api-documenter-yaml-to-antora-asciidoc[Source code on GitHub]
