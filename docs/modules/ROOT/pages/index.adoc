@@ -1,0 +1,29 @@
+= api-documenter-yaml-to-antora-asciidoc
+
+Finally, I found it. A documentation pipeline to generate API documentation for my TypeScript projects that works for me.
+
+.xref:#pipeline[The documentation pipeline]
+image::how-it-works.drawio.svg[A diagram showing how the workflow works]
+
+[#pipeline]
+== The documentation pipeline
+
+. **TypeScript Compiler** is used to generate `.d.ts` files.
+  * TypeScript source code should contain the https://api-extractor.com/pages/tsdoc/doc_comment_syntax/[TSDoc comments].
+. https://api-extractor.com/[*@microsoft/api-extractor*] is used to generate `.api.json` files.
+  * It is maintained by Microsoft and used in many projects.
+  * It https://api-extractor.com/pages/setup/generating_docs/[generates a “doc model” file].
+  ** It describes the API surface of a TypeScript package.
+  ** Its https://www.npmjs.com/package/@microsoft/api-extractor-model[file format] is https://rushstack.io/pages/api/api-extractor-model/[defined by the api-extractor tool].
+  ** It does not specify how the documentation should be organized. i.e. it has no notion of pages and sections.
+. https://www.npmjs.com/package/@microsoft/api-documenter[*@microsoft/api-documenter*] is used to generate `.yml` files.
+  * It is also maintained by Microsoft.
+  * It https://api-extractor.com/pages/commands/api-documenter_yaml/[generates YAML files] conforming to the “universal reference YAML format.”
+  ** This format is mainly used by https://docs.microsoft.com/[docs.microsoft.com] pipeline.
+  ** It can also be https://api-extractor.com/pages/setup/generating_docs/#using-api-documenter-with-docfx[used] with the https://dotnet.github.io/docfx/[DocFX] tool.
+  ** It https://dotnet.github.io/docfx/spec/metadata_format_spec.html[specifies] the structure of the documentation — each metadata file would correspond to a page in the generated documentation.
+. **api-documenter-yaml-to-antora-asciidoc** (this project!) is used to generate `.adoc` files.
+  * It reads the YAML files in step 3 and generates a bunch of `.adoc` files.
+  ** It follows https://docs.antora.org/antora/2.3/[Antora]’s folder and file structures, so that it can be easily used with Antora.
+. https://antora.org/[*Antora*] is used to generate `.html` files.
+  * It is a multi-repository documentation generator. It can be used to generate a single documentation site for multiple projects.
