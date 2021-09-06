@@ -1,6 +1,6 @@
 site:
   title: api-documenter-yaml-to-antora-asciidoc demo
-  start_page: vue3::index.adoc
+  start_page: vue3-apidocs-example::index.adoc
 content:
   sources:
     - url: ./project
