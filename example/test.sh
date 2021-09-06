@@ -8,5 +8,5 @@ generate() {
 }
 
 generate "build/site/vue3-apidocs-example/api/vue_reactivity.html" reactivity
-generate "build/site/vue3-apidocs-example/api/vue_reactivity.html#vue_reactivity_reactive_function_1" computed
+generate "build/site/vue3-apidocs-example/api/vue_reactivity.html#vue_reactivity_shallowReactive_function_1" shallow_reactive
 generate "build/site/vue3-apidocs-example/api/vue_shared_PatchFlags_enum.html" patchflags
