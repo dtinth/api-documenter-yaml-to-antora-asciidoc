@@ -11,6 +11,14 @@ My projects:
 
 - xref:shell-tester:api:index.adoc[shell-tester]
 
+== Screenshots
+
+image::https://github.com/dtinth/api-documenter-yaml-to-antora-asciidoc/raw/master/example/images/reactivity.png[Example 1]
+
+image::https://github.com/dtinth/api-documenter-yaml-to-antora-asciidoc/raw/master/example/images/shallow_reactive.png[Example 2]
+
+image::https://github.com/dtinth/api-documenter-yaml-to-antora-asciidoc/raw/master/example/images/patchflags.png[Example 3]
+
 [#pipeline]
 == The documentation pipeline
 
