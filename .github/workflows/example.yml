@@ -13,6 +13,7 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v2
+      - run: npm install -g pnpm
       - run: pnpm install
       - run: cd example && pnpm install && ./build
       - name: Deploy
