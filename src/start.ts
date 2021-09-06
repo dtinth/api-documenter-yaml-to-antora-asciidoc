@@ -4,7 +4,7 @@ import { CLI } from './CLI'
 
 function main() {
   const cli = new CLI()
-  cli.execute()
+  void cli.execute()
 }
 
 main()
