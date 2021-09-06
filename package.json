@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "heft build"
+    "prepare": "heft build"
   },
   "bin": {
     "api-documenter-yaml-to-antora-asciidoc": "./bin/api-documenter-yaml-to-antora-asciidoc"
