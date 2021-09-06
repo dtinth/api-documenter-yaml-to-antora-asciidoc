@@ -4,7 +4,7 @@ Finally, I found it. A documentation pipeline to generate API documentation for 
 
 ![Diagram](./docs/modules/ROOT/images/how-it-works.drawio.svg)
 
-It looks like this:
+I looks like this:
 
 [![Example](./example/images/shallow_reactive.png)](https://dtinth.github.io/api-documenter-yaml-to-antora-asciidoc/)
 
