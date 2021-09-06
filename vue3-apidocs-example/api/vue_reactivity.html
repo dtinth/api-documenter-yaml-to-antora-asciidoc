@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>package @vue/reactivity :: api-documenter-yaml-to-antora-asciidoc demo</title>
+    <link rel="prev" href="../index.html">
+    <link rel="next" href="vue_reactivity_ComputedRef_interface.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">api-documenter-yaml-to-antora-asciidoc demo</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="vue3-apidocs-example" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">vue3-apidocs-example</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Example</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API documentation</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="vue_reactivity.html">@vue/reactivity</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_reactivity_ComputedRef_interface.html">ComputedRef</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_reactivity_DebuggerOptions_interface.html">DebuggerOptions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_reactivity_EffectScope_class.html">EffectScope</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_reactivity_ReactiveEffect_class.html">ReactiveEffect</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_reactivity_ReactiveEffectOptions_interface.html">ReactiveEffectOptions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_reactivity_ReactiveEffectRunner_interface.html">ReactiveEffectRunner</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_reactivity_ReactiveFlags_enum.html">ReactiveFlags</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_reactivity_Ref_interface.html">Ref</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_reactivity_RefUnwrapBailTypes_interface.html">RefUnwrapBailTypes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_reactivity_TrackOpTypes_enum.html">TrackOpTypes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_reactivity_TriggerOpTypes_enum.html">TriggerOpTypes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_reactivity_WritableComputedOptions_interface.html">WritableComputedOptions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_reactivity_WritableComputedRef_interface.html">WritableComputedRef</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="vue_runtime-core.html">@vue/runtime-core</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_AllowedComponentProps_interface.html">AllowedComponentProps</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_App_interface.html">App</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_AppConfig_interface.html">AppConfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_AppContext_interface.html">AppContext</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_AsyncComponentOptions_interface.html">AsyncComponentOptions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_BaseTransitionProps_interface.html">BaseTransitionProps</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_ComponentCustomOptions_interface.html">ComponentCustomOptions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_ComponentCustomProperties_interface.html">ComponentCustomProperties</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_ComponentCustomProps_interface.html">ComponentCustomProps</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_ComponentInternalInstance_interface.html">ComponentInternalInstance</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_ComponentOptionsBase_interface.html">ComponentOptionsBase</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_DeprecationTypes_enum.html">DeprecationTypes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_DirectiveBinding_interface.html">DirectiveBinding</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_ErrorCodes_enum.html">ErrorCodes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_FunctionalComponent_interface.html">FunctionalComponent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_HMRRuntime_interface.html">HMRRuntime</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_HydrationRenderer_interface.html">HydrationRenderer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_InjectionKey_interface.html">InjectionKey</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_KeepAliveProps_interface.html">KeepAliveProps</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_MethodOptions_interface.html">MethodOptions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_ObjectDirective_interface.html">ObjectDirective</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_Renderer_interface.html">Renderer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_RendererElement_interface.html">RendererElement</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_RendererNode_interface.html">RendererNode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_RendererOptions_interface.html">RendererOptions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_RuntimeCompilerOptions_interface.html">RuntimeCompilerOptions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_SetupContext_interface.html">SetupContext</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_SuspenseBoundary_interface.html">SuspenseBoundary</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_SuspenseProps_interface.html">SuspenseProps</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_TeleportProps_interface.html">TeleportProps</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_TransitionHooks_interface.html">TransitionHooks</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_TransitionState_interface.html">TransitionState</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_VNode_interface.html">VNode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_WatchOptions_interface.html">WatchOptions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-core_WatchOptionsBase_interface.html">WatchOptionsBase</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="vue_runtime-dom.html">@vue/runtime-dom</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-dom_TransitionProps_interface.html">TransitionProps</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_runtime-dom_VueElement_class.html">VueElement</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="vue_shared.html">@vue/shared</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_shared_PatchFlags_enum.html">PatchFlags</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_shared_ShapeFlags_enum.html">ShapeFlags</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vue_shared_SlotFlags_enum.html">SlotFlags</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">vue3-apidocs-example</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">vue3-apidocs-example</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">vue3-apidocs-example</a></li>
+    <li>API documentation</li>
+    <li><a href="vue_reactivity.html">@vue/reactivity</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">package @vue/reactivity</h1>
+<div class="sect1">
+<h2 id="_classes"><a class="anchor" href="#_classes"></a>Classes</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="vue_reactivity_EffectScope_class.html" class="page">EffectScope</a></p>
+</li>
+<li>
+<p><a href="vue_reactivity_ReactiveEffect_class.html" class="page">ReactiveEffect</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_interfaces"><a class="anchor" href="#_interfaces"></a>Interfaces</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="vue_reactivity_ComputedRef_interface.html" class="page">ComputedRef</a></p>
+</li>
+<li>
+<p><a href="vue_reactivity_DebuggerOptions_interface.html" class="page">DebuggerOptions</a></p>
+</li>
+<li>
+<p><a href="vue_reactivity_ReactiveEffectOptions_interface.html" class="page">ReactiveEffectOptions</a></p>
+</li>
+<li>
+<p><a href="vue_reactivity_ReactiveEffectRunner_interface.html" class="page">ReactiveEffectRunner</a></p>
+</li>
+<li>
+<p><a href="vue_reactivity_Ref_interface.html" class="page">Ref</a></p>
+</li>
+<li>
+<p><a href="vue_reactivity_RefUnwrapBailTypes_interface.html" class="page">RefUnwrapBailTypes</a></p>
+</li>
+<li>
+<p><a href="vue_reactivity_WritableComputedOptions_interface.html" class="page">WritableComputedOptions</a></p>
+</li>
+<li>
+<p><a href="vue_reactivity_WritableComputedRef_interface.html" class="page">WritableComputedRef</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_enumerations"><a class="anchor" href="#_enumerations"></a>Enumerations</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="vue_reactivity_ReactiveFlags_enum.html" class="page">ReactiveFlags</a></p>
+</li>
+<li>
+<p><a href="vue_reactivity_TrackOpTypes_enum.html" class="page">TrackOpTypes</a></p>
+</li>
+<li>
+<p><a href="vue_reactivity_TriggerOpTypes_enum.html" class="page">TriggerOpTypes</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_functions"><a class="anchor" href="#_functions"></a>Functions</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="vue_reactivity_computed_function_1"><a class="anchor" href="#vue_reactivity_computed_function_1"></a>computed(getter, debugOptions)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>getter</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ComputedGetter&lt;T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>debugOptions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_DebuggerOptions_interface.html" class="page">DebuggerOptions</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_ComputedRef_interface.html" class="page">ComputedRef</a>&lt;T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function computed&lt;T&gt;(getter: ComputedGetter&lt;T&gt;, debugOptions?: DebuggerOptions): ComputedRef&lt;T&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_computed_function_2"><a class="anchor" href="#vue_reactivity_computed_function_2"></a>computed(options, debugOptions)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>options</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_WritableComputedOptions_interface.html" class="page">WritableComputedOptions</a>&lt;T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>debugOptions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_DebuggerOptions_interface.html" class="page">DebuggerOptions</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_WritableComputedRef_interface.html" class="page">WritableComputedRef</a>&lt;T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function computed&lt;T&gt;(options: WritableComputedOptions&lt;T&gt;, debugOptions?: DebuggerOptions): WritableComputedRef&lt;T&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_customRef_function_1"><a class="anchor" href="#vue_reactivity_customRef_function_1"></a>customRef(factory)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>factory</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~CustomRefFactory&lt;T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_Ref_interface.html" class="page">Ref</a>&lt;T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function customRef&lt;T&gt;(factory: CustomRefFactory&lt;T&gt;): Ref&lt;T&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_deferredComputed_function_1"><a class="anchor" href="#vue_reactivity_deferredComputed_function_1"></a>deferredComputed(getter)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>getter</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>() =&gt; T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_ComputedRef_interface.html" class="page">ComputedRef</a>&lt;T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function deferredComputed&lt;T&gt;(getter: () =&gt; T): ComputedRef&lt;T&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_effect_function_1"><a class="anchor" href="#vue_reactivity_effect_function_1"></a>effect(fn, options)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>fn</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>() =&gt; T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>options</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_ReactiveEffectOptions_interface.html" class="page">ReactiveEffectOptions</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_ReactiveEffectRunner_interface.html" class="page">ReactiveEffectRunner</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function effect&lt;T = any&gt;(fn: () =&gt; T, options?: ReactiveEffectOptions): ReactiveEffectRunner;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_effectScope_function_1"><a class="anchor" href="#vue_reactivity_effectScope_function_1"></a>effectScope(detached)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>detached</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>boolean</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_EffectScope_class.html" class="page">EffectScope</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function effectScope(detached?: boolean): EffectScope;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_enableTracking_function_1"><a class="anchor" href="#vue_reactivity_enableTracking_function_1"></a>enableTracking()</h3>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function enableTracking(): void;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_getCurrentScope_function_1"><a class="anchor" href="#vue_reactivity_getCurrentScope_function_1"></a>getCurrentScope()</h3>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function getCurrentScope(): EffectScope | undefined;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_isProxy_function_1"><a class="anchor" href="#vue_reactivity_isProxy_function_1"></a>isProxy(value)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>value</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>unknown</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>boolean</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function isProxy(value: unknown): boolean;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_isReactive_function_1"><a class="anchor" href="#vue_reactivity_isReactive_function_1"></a>isReactive(value)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>value</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>unknown</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>boolean</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function isReactive(value: unknown): boolean;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_isReadonly_function_1"><a class="anchor" href="#vue_reactivity_isReadonly_function_1"></a>isReadonly(value)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>value</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>unknown</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>boolean</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function isReadonly(value: unknown): boolean;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_isRef_function_1"><a class="anchor" href="#vue_reactivity_isRef_function_1"></a>isRef(r)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>r</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_Ref_interface.html" class="page">Ref</a>&lt;T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">unknown</p></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@vue/reactivity!~r is <a href="vue_reactivity_Ref_interface.html" class="page">Ref</a>&lt;T&gt;</code></p></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function isRef&lt;T&gt;(r: Ref&lt;T&gt; | unknown): r is Ref&lt;T&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_markRaw_function_1"><a class="anchor" href="#vue_reactivity_markRaw_function_1"></a>markRaw(value)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>value</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function markRaw&lt;T extends object&gt;(value: T): T;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_onScopeDispose_function_1"><a class="anchor" href="#vue_reactivity_onScopeDispose_function_1"></a>onScopeDispose(fn)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>fn</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>() =&gt; void</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>void</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function onScopeDispose(fn: () =&gt; void): void;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_pauseTracking_function_1"><a class="anchor" href="#vue_reactivity_pauseTracking_function_1"></a>pauseTracking()</h3>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function pauseTracking(): void;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_proxyRefs_function_1"><a class="anchor" href="#vue_reactivity_proxyRefs_function_1"></a>proxyRefs(objectWithRefs)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>objectWithRefs</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ShallowUnwrapRef&lt;T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function proxyRefs&lt;T extends object&gt;(objectWithRefs: T): ShallowUnwrapRef&lt;T&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_reactive_function_1"><a class="anchor" href="#vue_reactivity_reactive_function_1"></a>reactive(target)</h3>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Creates a reactive copy of the original object.</p>
+</div>
+<div class="paragraph">
+<p>The reactive conversion is "deep"—it affects all nested properties. In the ES2015 Proxy based implementation, the returned proxy is *\*not\*\* equal to the original object. It is recommended to work exclusively with the reactive proxy and avoid relying on the original object.</p>
+</div>
+<div class="paragraph">
+<p>A reactive object also automatically unwraps refs contained in it, so you don&#8217;t need to use <code>.value</code> when accessing and mutating their value:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">const count = ref(0)
+const obj = reactive({
+  count
+})
+
+obj.count++
+obj.count // -&gt; 1
+count.value // -&gt; 1</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>target</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>UnwrapNestedRefs&lt;T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function reactive&lt;T extends object&gt;(target: T): UnwrapNestedRefs&lt;T&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_readonly_function_1"><a class="anchor" href="#vue_reactivity_readonly_function_1"></a>readonly(target)</h3>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Creates a readonly copy of the original object. Note the returned copy is not made reactive, but <code>readonly</code> can be called on an already reactive object.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>target</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DeepReadonly&lt;UnwrapNestedRefs&lt;T&gt;&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function readonly&lt;T extends object&gt;(target: T): DeepReadonly&lt;UnwrapNestedRefs&lt;T&gt;&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_ref_function_1"><a class="anchor" href="#vue_reactivity_ref_function_1"></a>ref(value)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>value</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ToRef&lt;T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function ref&lt;T extends object&gt;(value: T): ToRef&lt;T&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_ref_function_2"><a class="anchor" href="#vue_reactivity_ref_function_2"></a>ref(value)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>value</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_Ref_interface.html" class="page">Ref</a>&lt;UnwrapRef&lt;T&gt;&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function ref&lt;T&gt;(value: T): Ref&lt;UnwrapRef&lt;T&gt;&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_ref_function_3"><a class="anchor" href="#vue_reactivity_ref_function_3"></a>ref()</h3>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function ref&lt;T = any&gt;(): Ref&lt;T | undefined&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_resetTracking_function_1"><a class="anchor" href="#vue_reactivity_resetTracking_function_1"></a>resetTracking()</h3>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function resetTracking(): void;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_shallowReactive_function_1"><a class="anchor" href="#vue_reactivity_shallowReactive_function_1"></a>shallowReactive(target)</h3>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Return a shallowly-reactive copy of the original object, where only the root level properties are reactive. It also does not auto-unwrap refs (even at the root level).</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>target</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function shallowReactive&lt;T extends object&gt;(target: T): T;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_shallowReadonly_function_1"><a class="anchor" href="#vue_reactivity_shallowReadonly_function_1"></a>shallowReadonly(target)</h3>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Returns a reactive-copy of the original object, where only the root level properties are readonly, and does NOT unwrap refs nor recursively convert returned properties. This is used for creating the props proxy object for stateful components.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>target</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Readonly&lt;{
+    [K in keyof T]: UnwrapNestedRefs&lt;T[K]&gt;;
+}&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function shallowReadonly&lt;T extends object&gt;(target: T): Readonly&lt;{
+    [K in keyof T]: UnwrapNestedRefs&lt;T[K]&gt;;
+}&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_shallowRef_function_1"><a class="anchor" href="#vue_reactivity_shallowRef_function_1"></a>shallowRef(value)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>value</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T extends <a href="vue_reactivity_Ref_interface.html" class="page">Ref</a> ? T : <a href="vue_reactivity_Ref_interface.html" class="page">Ref</a>&lt;T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function shallowRef&lt;T extends object&gt;(value: T): T extends Ref ? T : Ref&lt;T&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_shallowRef_function_2"><a class="anchor" href="#vue_reactivity_shallowRef_function_2"></a>shallowRef(value)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>value</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_Ref_interface.html" class="page">Ref</a>&lt;T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function shallowRef&lt;T&gt;(value: T): Ref&lt;T&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_shallowRef_function_3"><a class="anchor" href="#vue_reactivity_shallowRef_function_3"></a>shallowRef()</h3>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function shallowRef&lt;T = any&gt;(): Ref&lt;T | undefined&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_stop_2_function_1"><a class="anchor" href="#vue_reactivity_stop_2_function_1"></a>stop_2(runner)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>runner</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_ReactiveEffectRunner_interface.html" class="page">ReactiveEffectRunner</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>void</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function stop(runner: ReactiveEffectRunner): void;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_toRaw_function_1"><a class="anchor" href="#vue_reactivity_toRaw_function_1"></a>toRaw(observed)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>observed</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function toRaw&lt;T&gt;(observed: T): T;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_toRef_function_1"><a class="anchor" href="#vue_reactivity_toRef_function_1"></a>toRef(object, key)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>object</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>key</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>K</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ToRef&lt;T[K]&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function toRef&lt;T extends object, K extends keyof T&gt;(object: T, key: K): ToRef&lt;T[K]&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_toRefs_function_1"><a class="anchor" href="#vue_reactivity_toRefs_function_1"></a>toRefs(object)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>object</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ToRefs&lt;T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function toRefs&lt;T extends object&gt;(object: T): ToRefs&lt;T&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_track_function_1"><a class="anchor" href="#vue_reactivity_track_function_1"></a>track(target, type, key)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>target</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>object</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_TrackOpTypes_enum.html" class="page">TrackOpTypes</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>key</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>unknown</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>void</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function track(target: object, type: TrackOpTypes, key: unknown): void;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_trigger_function_1"><a class="anchor" href="#vue_reactivity_trigger_function_1"></a>trigger(target, type, key, newValue, oldValue, oldTarget)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>target</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>object</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_TriggerOpTypes_enum.html" class="page">TriggerOpTypes</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>key</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>unknown</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>newValue</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>unknown</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>oldValue</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>unknown</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>oldTarget</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Map&lt;unknown, unknown&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set&lt;unknown&gt;</p></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>void</code></p></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function trigger(target: object, type: TriggerOpTypes, key?: unknown, newValue?: unknown, oldValue?: unknown, oldTarget?: Map&lt;unknown, unknown&gt; | Set&lt;unknown&gt;): void;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_triggerRef_function_1"><a class="anchor" href="#vue_reactivity_triggerRef_function_1"></a>triggerRef(ref)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ref</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_reactivity_Ref_interface.html" class="page">Ref</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>void</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function triggerRef(ref: Ref): void;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vue_reactivity_unref_function_1"><a class="anchor" href="#vue_reactivity_unref_function_1"></a>unref(ref)</h3>
+<div class="exampleblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Parameters</caption>
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ref</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="vue_reactivity_Ref_interface.html" class="page">Ref</a>&lt;T&gt;</p></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+</tr>
+</tfoot>
+</table>
+<div class="listingblock">
+<div class="title">Signature</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export declare function unref&lt;T&gt;(ref: T | Ref&lt;T&gt;): T;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="../index.html">Example</a></span>
+  <span class="next"><a href="vue_reactivity_ComputedRef_interface.html">ComputedRef</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
