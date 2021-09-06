@@ -2,3 +2,4 @@
 node_modules
 /.heft/
 /lib/
+/temp/
