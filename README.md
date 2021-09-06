@@ -2,11 +2,11 @@
 
 Finally, I found it. A documentation pipeline to generate API documentation for my TypeScript projects that works for me.
 
-![Diagram](./docs/modules/ROOT/images/how-it-works.drawio.svg)
+![Diagram](https://github.com/dtinth/api-documenter-yaml-to-antora-asciidoc/raw/master/docs/modules/ROOT/images/how-it-works.drawio.svg)
 
 It looks like this:
 
-[![Example](./example/images/shallow_reactive.png)](https://dtinth.github.io/api-documenter-yaml-to-antora-asciidoc/)
+[![Example](https://github.com/dtinth/api-documenter-yaml-to-antora-asciidoc/raw/master/example/images/shallow_reactive.png)](https://dtinth.github.io/api-documenter-yaml-to-antora-asciidoc/)
 
 I use it in my projects:
 
