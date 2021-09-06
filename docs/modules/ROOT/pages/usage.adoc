@@ -1,0 +1,18 @@
+= Usage
+
+Assuming that you have already https://api-extractor.com/pages/setup/generating_docs/[generated] the YAML files using https://api-extractor.com/pages/commands/api-documenter_yaml/[`api-documenter yaml`] command… To generate generate the AsciiDoc files, run the following command where `<input-dir>` is the directory that contains the `.yml` files:
+
+ $ npx api-documenter-yaml-to-antora-asciidoc asciidoc -i <input-dir>
+
+This will generate the AsciiDoc pages in `docs/modules/api/pages`.
+
+== Navigation
+
+It will also generate a https://docs.antora.org/antora/2.3/navigation/files-and-lists/[navigation file] at `docs/modules/api/nav.adoc` file that lists the pages in the documentation. You can then add this navigation file to your Antora project:
+
+[source,yaml]
+----
+nav:
+  - modules/api/nav.adoc <1>
+----
+<1> Add this line

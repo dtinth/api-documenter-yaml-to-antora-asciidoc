@@ -1,5 +1,5 @@
 name: api-documenter-yaml-to-antora-asciidoc
 version: master
 title: 'api-documenter-yaml-to-antora-asciidoc'
-# nav:
-#   - modules/ROOT/nav.adoc
+nav:
+  - modules/ROOT/nav.adoc
