@@ -11,6 +11,7 @@
   "bin": {
     "api-documenter-yaml-to-antora-asciidoc": "./bin/api-documenter-yaml-to-antora-asciidoc"
   },
+  "files": ["bin", "lib", "src"],
   "devDependencies": {
     "@microsoft/api-documenter": "^7.13.44",
     "@rushstack/eslint-config": "^2.3.4",
