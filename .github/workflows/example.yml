@@ -24,3 +24,11 @@ jobs:
           publish_dir: ./example/build/site
           user_name: 'dtinth-bot'
           user_email: 'dtinth-bot@users.noreply.github.com'
+      - run: cd example && ./test.sh
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update example images as of ${{ github.sha }}
+          file_pattern: example/images
+          commit_user_name: dtinth-bot
+          commit_user_email: dtinth-bot@users.noreply.github.com
+          commit_author: dtinth-bot <dtinth-bot@users.noreply.github.com>
