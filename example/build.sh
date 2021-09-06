@@ -35,8 +35,8 @@ EOF
 (
   cd project
   git init .
-  git confg user.email "example@example.com"
-  git confg user.name "Example"
+  git config user.email "example@example.com"
+  git config user.name "Example"
   git add -A
   git commit -m "Initial commit"
 )
