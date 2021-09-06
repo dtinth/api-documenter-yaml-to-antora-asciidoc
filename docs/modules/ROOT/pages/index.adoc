@@ -9,7 +9,7 @@ image::how-it-works.drawio.svg[A diagram showing how the workflow works]
 
 My projects:
 
-- xref:shell-tester:api:index.adoc[shell-tester]
+- xref:shell-tester:api:shell-tester.adoc[shell-tester]
 
 == Screenshots
 
