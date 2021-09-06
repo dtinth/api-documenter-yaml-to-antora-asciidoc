@@ -122,7 +122,8 @@ class AsciiDocGenerator {
   }
 
   _generateMember(member: Item) {
-    const { name, summary } = member
+    const { name, summary, uid } = member
+    this._output.push(`[id="${this._slugMapping.getSlug(uid)}"]`)
     this._output.push(`=== ${name}`)
     this._output.push('')
     this._output.push('========')
@@ -228,17 +229,38 @@ class AsciiDocGenerator {
     }
   }
 
+  _resolveXref(uid: string) {
+    const getFallback = () => {
+      const m = uid.match(/!([^!:]+):/)
+      return m ? m[1] : uid
+    }
+
+    const pageUid = this._catalog.getPage(uid)
+    if (!pageUid) {
+      return getFallback()
+    }
+
+    const pageSlug = this._slugMapping.getSlug(pageUid)
+    const itemSlug = this._slugMapping.getSlug(uid)
+
+    const item = this._catalog.get(uid)
+    const page = this._catalog.get(pageUid)
+    if (!page) {
+      return getFallback()
+    }
+
+    const name = item?.name || getFallback()
+
+    if (pageUid === uid) {
+      return `xref:${pageSlug}.adoc[${name}]`
+    } else {
+      return `xref:${pageSlug}.adoc#${itemSlug}[${name}]`
+    }
+  }
+
   _replaceXrefInType(text: string) {
     return text.replace(/<xref uid="([^"]+)"\s*\/>/g, (match, uid) => {
-      const slug = this._slugMapping.getSlug(uid)
-      const item = this._catalog.get(uid)
-      if (!item) {
-        const m = uid.match(/!([^!:]+):/)
-        if (m) {
-          return m[1]
-        }
-      }
-      return `xref:${slug}.adoc[${item?.name || ''}]`
+      return this._resolveXref(uid)
     })
   }
 
@@ -247,12 +269,7 @@ class AsciiDocGenerator {
       .replace(
         /\[([^\]]+)\]\(xref:((?:[^\s()]|[(][^)]*[)])*)\)/g,
         (match, name, uid) => {
-          const item = this._catalog.get(uid)
-          if (!item) {
-            return '`' + name + '`'
-          }
-          const slug = this._slugMapping.getSlug(uid)
-          return `xref:${slug}.adoc[${name}]`
+          return this._resolveXref(decodeURIComponent(uid))
         },
       )
       .replace(/<!-- -->/g, '')
