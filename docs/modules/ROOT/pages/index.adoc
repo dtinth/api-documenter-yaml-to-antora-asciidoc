@@ -5,6 +5,12 @@ Finally, I found it. A documentation pipeline to generate API documentation for 
 .xref:#pipeline[The documentation pipeline]
 image::how-it-works.drawio.svg[A diagram showing how the workflow works]
 
+== Example of generated documentation
+
+My projects:
+
+- xref:shell-tester:api:index.adoc[shell-tester]
+
 [#pipeline]
 == The documentation pipeline
 

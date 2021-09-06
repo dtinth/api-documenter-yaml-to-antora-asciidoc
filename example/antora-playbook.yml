@@ -1,0 +1,12 @@
+site:
+  title: api-documenter-yaml-to-antora-asciidoc demo
+  start_page: vue3::index.adoc
+content:
+  sources:
+    - url: ./project
+      branches: HEAD
+      start_path: docs
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
