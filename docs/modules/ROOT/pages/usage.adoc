@@ -1,12 +1,76 @@
 = Usage
 
+If you have already set up `api-extractor` and `api-documenter`, skip to the xref:#asciidoc[] section.
+
+IMPORTANT: Before continuing, make sure you understand the xref:constraints.adoc[].
+
+[#deps]
+== Install dependencies
+
+First, install these dependencies:
+
+ $ yarn add --dev \
+    @microsoft/api-extractor \
+    @microsoft/api-documenter \
+    api-documenter-yaml-to-antora-asciidoc
+
+[#api-extractor-settings]
+== Set up api-extractor
+
+.api-extractor.json
+[source,json]
+----
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
+  "mainEntryPointFilePath": "<projectFolder>/lib/index.d.ts", <1>
+  "docModel": {
+    "enabled": true,
+    "apiJsonFilePath": "<projectFolder>/tmp/api/<unscopedPackageName>.api.json"
+  },
+  "apiReport": {
+    "enabled": false, <2>
+    "reportFolder": "<projectFolder>/api",
+    "reportTempFolder": "<projectFolder>/tmp/api"
+  },
+  "dtsRollup": {
+    "enabled": false, <3>
+    "untrimmedFilePath": "",
+    "publicTrimmedFilePath": "<projectFolder>/api/<unscopedPackageName>.d.ts"
+  }
+}
+----
+<1> Change this to the path of your main entry point file.
+<2> If you want to generate an API report, set this to true.
+<3> If you want to generate a .d.ts rollup file, set this to true.
+
+..gitignore
+[source]
+----
+/api/
+/tmp/
+----
+
+[#api-extractor]
+== Generate doc model files
+
+ $ yarn api-extractor run
+
+[#api-documenter]
+== Generate YAML files
+
+ $ yarn api-documenter yaml -i tmp/api -o tmp/api-yaml
+
+[#asciidoc]
+== Generate AsciiDoc files
+
 Assuming that you have already https://api-extractor.com/pages/setup/generating_docs/[generated] the YAML files using https://api-extractor.com/pages/commands/api-documenter_yaml/[`api-documenter yaml`] command… To generate generate the AsciiDoc files, run the following command where `<input-dir>` is the directory that contains the `.yml` files:
 
- $ npx api-documenter-yaml-to-antora-asciidoc asciidoc -i <input-dir>
+ $ yarn api-documenter-yaml-to-antora-asciidoc asciidoc -i tmp/api-yaml
 
 This will generate the AsciiDoc pages in `docs/modules/api/pages`.
 
-== Navigation
+[#nav]
+== Set up navigation
 
 It will also generate a https://docs.antora.org/antora/2.3/navigation/files-and-lists/[navigation file] at `docs/modules/api/nav.adoc` file that lists the pages in the documentation. You can then add this navigation file to your Antora project:
 
@@ -16,3 +80,49 @@ nav:
   - modules/api/nav.adoc <1>
 ----
 <1> Add this line
+
+[#package-script]
+== Set up package.json
+
+To generate the documentation easily, you can add the following to your `package.json`:
+
+[source,json]
+----
+{
+  "scripts": {
+    "api": "api-extractor run && api-documenter yaml -i tmp/api -o tmp/api-yaml && api-documenter-yaml-to-antora-asciidoc asciidoc -i tmp/api-yaml" <1>
+  }
+}
+----
+<1> Add this line
+
+Now, you can run `yarn api` to regenerate the documentation.
+
+[#ci]
+== Use GitHub Actions to keep the documentation up-to-date
+
+You can use GitHub Actions to automatically regenerate the documentation files when you push to the repository.
+
+[source,yaml]
+----
+name: Update API documentation
+on:
+  workflow_dispatch:
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+      - name: Install dependencies
+        run: yarn
+      - name: Update API
+        run: yarn api
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update generated files as of ${{ github.sha }}
+          file_pattern: api docs
+----

@@ -1,0 +1,25 @@
+= API design constraints and known issues
+
+This tool puts several constraints on your API design.
+Some of them are imposed by `api-extractor` and `api-documenter`, and some are imposed by this tool.
+
+Basically, if you use this tool, **you will be creating http://boringtechnology.club/[boring], object-oriented APIs** with classes, interfaces and functions. You will not be using all the fancy TypeScript constructs.
+
+[%header,cols="2,2a"]
+|===
+|Limitation
+|Workaround
+
+|Default export is not supported.
+|Use only named exports instead.
+
+|CommonJS `export =` is not supported.
+|Use only module export syntax only.
+
+|Type aliases are not documented.
+|Use interfaces instead.
+
+|Call signatures are not documented.
+|Use methods instead.
+|===
+
