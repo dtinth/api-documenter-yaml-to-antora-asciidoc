@@ -48,6 +48,7 @@ First, install these dependencies:
 ----
 /api/
 /tmp/
+tsdoc-metadata.json
 ----
 
 .tsconfig.json
