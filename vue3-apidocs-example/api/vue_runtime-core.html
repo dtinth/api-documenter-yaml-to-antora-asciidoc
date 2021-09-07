@@ -448,30 +448,30 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>fn</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Function</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Function[]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Function | Function[]</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>instance</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_ComponentInternalInstance_interface.html" class="page">ComponentInternalInstance</a></code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_ComponentInternalInstance_interface.html" class="page">ComponentInternalInstance</a> | null</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>ErrorTypes</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>args</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>unknown[]</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>unknown[]</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>any[]</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -510,25 +510,25 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>instance</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_ComponentInternalInstance_interface.html" class="page">ComponentInternalInstance</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_ComponentInternalInstance_interface.html" class="page">ComponentInternalInstance</a> | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>ErrorTypes</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>args</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>unknown[]</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>any</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -567,20 +567,20 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>extraProps</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(Data &amp; VNodeProps)</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(Data &amp; VNodeProps) | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>mergeRef</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>boolean</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_VNode_interface.html" class="page">VNode</a>&lt;T, U&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -617,35 +617,35 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>VNodeTypes</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ClassComponent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>VNodeTypes | ClassComponent</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>props</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Record&lt;string, any&gt;</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Record&lt;string, any&gt; | null</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>any</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>patchFlag</code></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>patchFlag</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>number</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>dynamicProps</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>string[]</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>string[]</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_VNode_interface.html" class="page">VNode</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -726,40 +726,42 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>string</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">typeof Fragment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>string | typeof Fragment</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>props</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Record&lt;string, any&gt;</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Record&lt;string, any&gt; | null</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>any</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>patchFlag</code></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>patchFlag</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>number</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dynamicProps</code></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dynamicProps</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>string[]</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>shapeFlag</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>number</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>number</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_VNode_interface.html" class="page">VNode</a>&lt;<a href="vue_runtime-core_RendererNode_interface.html" class="page">RendererNode</a>, <a href="vue_runtime-core_RendererElement_interface.html" class="page">RendererElement</a>, {
+    [key: string]: any;
+}&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -795,55 +797,52 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>VNodeTypes</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ClassComponent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>VNodeTypes | ClassComponent</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">typeof NULL_DYNAMIC_COMPONENT</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">typeof NULL_DYNAMIC_COMPONENT</p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>props</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(Data &amp; VNodeProps) | null</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(Data &amp; VNodeProps)</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
 <td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>unknown</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>patchFlag</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>number</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>dynamicProps</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>string[]</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>string[] | null</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>shapeFlag</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>number</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>number | ShapeFlags</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ShapeFlags</p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>isBlockNode</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>boolean</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>boolean</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>needFullChildrenNormalization</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>boolean</code></p></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>boolean</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_VNode_interface.html" class="page">VNode</a>&lt;<a href="vue_runtime-core_RendererNode_interface.html" class="page">RendererNode</a>, <a href="vue_runtime-core_RendererElement_interface.html" class="page">RendererElement</a>, {
+    [key: string]: any;
+}&gt;</code></p></td>
 </tr>
 </tfoot>
 </table>
@@ -985,7 +984,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>dynamicSlots</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(~CompiledSlotDescriptor</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(\~CompiledSlotDescriptor</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">~CompiledSlotDescriptor[]</p></td>
 </tr>
 </tbody>
@@ -1121,15 +1120,15 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>source</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AsyncComponentLoader&lt;T&gt;</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="vue_runtime-core_AsyncComponentOptions_interface.html" class="page">AsyncComponentOptions</a>&lt;T&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AsyncComponentLoader&lt;T&gt; | <a href="vue_runtime-core_AsyncComponentOptions_interface.html" class="page">AsyncComponentOptions</a>&lt;T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -1165,15 +1164,15 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>setup</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(props: Readonly&lt;Props&gt;, ctx: <a href="vue_runtime-core_SetupContext_interface.html" class="page">SetupContext</a>) =&gt; RawBindings</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">RenderFunction</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(props: Readonly&lt;Props&gt;, ctx: <a href="vue_runtime-core_SetupContext_interface.html" class="page">SetupContext</a>) =&gt; RawBindings | RenderFunction</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>DefineComponent&lt;Props, RawBindings&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -1696,15 +1695,15 @@ const props = defineProps&lt;{
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>props</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(Data &amp; VNodeProps)</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(Data &amp; VNodeProps) | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(Data &amp; VNodeProps)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(Data &amp; VNodeProps) | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -1743,7 +1742,7 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawChildren</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawChildren</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
@@ -1790,13 +1789,13 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>props</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(~RawProps &amp; P)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(\~RawProps &amp; P)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">({} extends P ? null : never)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawChildren</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawChildren</code></p></td>
 </tr>
 </tbody>
 <tfoot>
@@ -1842,7 +1841,7 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawChildren</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawChildren</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
@@ -1884,20 +1883,20 @@ const props = defineProps&lt;{
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ConcreteComponent</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ConcreteComponent | string</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawChildren</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawChildren</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_VNode_interface.html" class="page">VNode</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -1931,25 +1930,25 @@ const props = defineProps&lt;{
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ConcreteComponent&lt;P&gt;</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
-</tr>
-<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ConcreteComponent&lt;P&gt; | string</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>props</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(~RawProps &amp; P)</code></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>props</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(\~RawProps &amp; P)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">({} extends P ? null : never)</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawChildren</code></p></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawChildren</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_VNode_interface.html" class="page">VNode</a></code></p></td>
 </tr>
 </tfoot>
 </table>
@@ -1993,7 +1992,7 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawChildren</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawChildren</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">RawSlots</p></td>
 </tr>
 </tbody>
@@ -2040,13 +2039,13 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>props</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(~RawProps &amp; P)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(\~RawProps &amp; P)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">({} extends P ? null : never)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawChildren</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawChildren</code></p></td>
 </tr>
 </tbody>
 <tfoot>
@@ -2087,12 +2086,12 @@ const props = defineProps&lt;{
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~Constructor</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~Constructor</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawChildren</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawChildren</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
@@ -2134,18 +2133,18 @@ const props = defineProps&lt;{
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~Constructor&lt;P&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~Constructor&lt;P&gt;</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>props</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(~RawProps &amp; P)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(\~RawProps &amp; P)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">({} extends P ? null : never)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawChildren</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawChildren</code></p></td>
 </tr>
 </tbody>
 <tfoot>
@@ -2191,7 +2190,7 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawChildren</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawChildren</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
@@ -2238,13 +2237,13 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>props</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(~RawProps &amp; P)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(\~RawProps &amp; P)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">({} extends P ? null : never)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawChildren</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawChildren</code></p></td>
 </tr>
 </tbody>
 <tfoot>
@@ -2290,13 +2289,13 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>props</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawProps</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawProps</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawChildren</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawChildren</code></p></td>
 </tr>
 </tbody>
 <tfoot>
@@ -2337,25 +2336,20 @@ const props = defineProps&lt;{
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>typeof Text</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">typeof Comment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>typeof Text | typeof Comment</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>string</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>string | number</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">boolean</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
+<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_VNode_interface.html" class="page">VNode</a></code></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -2389,30 +2383,25 @@ const props = defineProps&lt;{
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>typeof Text</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">typeof Comment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>typeof Text | typeof Comment</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>props</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>string</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>string | number</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">boolean</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
+<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_VNode_interface.html" class="page">VNode</a></code></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -2498,7 +2487,7 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>props</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawProps</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawProps</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
 </tr>
 <tr>
@@ -2550,12 +2539,12 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>props</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawProps &amp; <a href="vue_runtime-core_TeleportProps_interface.html" class="page">TeleportProps</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawProps &amp; <a href="vue_runtime-core_TeleportProps_interface.html" class="page">TeleportProps</a></code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawChildren</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawChildren</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
@@ -2602,7 +2591,7 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawChildren</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawChildren</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
@@ -2649,13 +2638,13 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>props</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(~RawProps &amp; <a href="vue_runtime-core_SuspenseProps_interface.html" class="page">SuspenseProps</a>)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>(\~RawProps &amp; <a href="vue_runtime-core_SuspenseProps_interface.html" class="page">SuspenseProps</a>)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>children</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~RawChildren</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~RawChildren</code></p></td>
 </tr>
 </tbody>
 <tfoot>
@@ -2701,25 +2690,25 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>instance</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_ComponentInternalInstance_interface.html" class="page">ComponentInternalInstance</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_ComponentInternalInstance_interface.html" class="page">ComponentInternalInstance</a> | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>ErrorTypes</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>throwInDev</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>boolean</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>void</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -2766,15 +2755,15 @@ const props = defineProps&lt;{
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>key</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_InjectionKey_interface.html" class="page">InjectionKey</a>&lt;T&gt;</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_InjectionKey_interface.html" class="page">InjectionKey</a>&lt;T&gt; | string</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T | undefined</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -2808,25 +2797,25 @@ const props = defineProps&lt;{
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>key</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_InjectionKey_interface.html" class="page">InjectionKey</a>&lt;T&gt;</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_InjectionKey_interface.html" class="page">InjectionKey</a>&lt;T&gt; | string</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>defaultValue</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>treatDefaultAsFactory</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -2860,25 +2849,25 @@ const props = defineProps&lt;{
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>key</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_InjectionKey_interface.html" class="page">InjectionKey</a>&lt;T&gt;</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_InjectionKey_interface.html" class="page">InjectionKey</a>&lt;T&gt; | string</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>defaultValue</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T | (() =&gt; T)</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(() =&gt; T)</p></td>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>treatDefaultAsFactory</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -2966,7 +2955,7 @@ const props = defineProps&lt;{
 <tfoot>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@vue/runtime-core!~value is <a href="vue_runtime-core_VNode_interface.html" class="page">VNode</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@vue/runtime-core!\~value is <a href="vue_runtime-core_VNode_interface.html" class="page">VNode</a></code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
@@ -3095,15 +3084,15 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>target</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_ComponentInternalInstance_interface.html" class="page">ComponentInternalInstance</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_ComponentInternalInstance_interface.html" class="page">ComponentInternalInstance</a> | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>void</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -3142,15 +3131,15 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>target</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_ComponentInternalInstance_interface.html" class="page">ComponentInternalInstance</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_ComponentInternalInstance_interface.html" class="page">ComponentInternalInstance</a> | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>void</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -3189,15 +3178,15 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>target</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_ComponentInternalInstance_interface.html" class="page">ComponentInternalInstance</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_ComponentInternalInstance_interface.html" class="page">ComponentInternalInstance</a> | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>void</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -3302,20 +3291,20 @@ const props = defineProps&lt;{
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>key</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_InjectionKey_interface.html" class="page">InjectionKey</a>&lt;T&gt;</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_InjectionKey_interface.html" class="page">InjectionKey</a>&lt;T&gt; | string</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">number</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">number</p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>value</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>T</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>void</code></p></td>
 </tr>
 </tfoot>
 </table>
@@ -3352,15 +3341,15 @@ const props = defineProps&lt;{
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>id</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>string</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>string | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>void</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -3808,8 +3797,8 @@ const props = defineProps&lt;{
 <tfoot>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ConcreteComponent</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ConcreteComponent | string</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -3850,8 +3839,8 @@ const props = defineProps&lt;{
 <tfoot>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Directive</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">undefined</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Directive | undefined</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -4039,7 +4028,7 @@ const props = defineProps&lt;{
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>hook</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~DevtoolsHook</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~DevtoolsHook</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
@@ -4176,7 +4165,7 @@ const props = defineProps&lt;{
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>transformer</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>typeof ~vnodeArgsTransformer</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>typeof \~vnodeArgsTransformer</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
@@ -4309,7 +4298,7 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cb</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>WatchCallback&lt;~MapSources&lt;T, false&gt;, ~MapSources&lt;T, Immediate&gt;&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>WatchCallback&lt;\~MapSources&lt;T, false&gt;, ~MapSources&lt;T, Immediate&gt;&gt;</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
@@ -4361,7 +4350,7 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cb</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>WatchCallback&lt;~MapSources&lt;T, false&gt;, ~MapSources&lt;T, Immediate&gt;&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>WatchCallback&lt;\~MapSources&lt;T, false&gt;, ~MapSources&lt;T, Immediate&gt;&gt;</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
@@ -4413,20 +4402,20 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cb</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>WatchCallback&lt;T, Immediate extends true ? T</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">undefined : T&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>WatchCallback&lt;T, Immediate extends true ? T | undefined : T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>options</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_WatchOptions_interface.html" class="page">WatchOptions</a>&lt;Immediate&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>WatchStopHandle</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -4465,20 +4454,20 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>cb</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>WatchCallback&lt;T, Immediate extends true ? T</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">undefined : T&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>WatchCallback&lt;T, Immediate extends true ? T | undefined : T&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>options</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_WatchOptions_interface.html" class="page">WatchOptions</a>&lt;Immediate&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>WatchStopHandle</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -4661,20 +4650,20 @@ const props = defineProps&lt;{
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>ctx</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_ComponentInternalInstance_interface.html" class="page">ComponentInternalInstance</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_ComponentInternalInstance_interface.html" class="page">ComponentInternalInstance</a> | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>isNonScopedSlot</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>boolean</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Function</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -4740,7 +4729,7 @@ const props = defineProps&lt;{
 <tfoot>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~PropsWithDefaults&lt;Props, Defaults&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~PropsWithDefaults&lt;Props, Defaults&gt;</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>

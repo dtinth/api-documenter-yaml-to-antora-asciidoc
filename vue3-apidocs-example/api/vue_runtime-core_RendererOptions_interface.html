@@ -427,15 +427,15 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>vnodeProps</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>(VNodeProps &amp; {
         [key: string]: any;
-    })</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+    }) | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>HostElement</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -523,15 +523,15 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>anchor</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HostNode</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HostNode | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>void</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -575,20 +575,20 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>anchor</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HostNode</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HostNode | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>isSVG</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>boolean</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>[HostNode, HostNode]</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -629,8 +629,8 @@
 <tfoot>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HostNode</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HostNode | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -671,8 +671,8 @@
 <tfoot>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HostElement</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HostElement | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -736,25 +736,25 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>parentComponent</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_ComponentInternalInstance_interface.html" class="page">ComponentInternalInstance</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_ComponentInternalInstance_interface.html" class="page">ComponentInternalInstance</a> | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>parentSuspense</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_SuspenseBoundary_interface.html" class="page">SuspenseBoundary</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="vue_runtime-core_SuspenseBoundary_interface.html" class="page">SuspenseBoundary</a> | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>unmountChildren</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\~UnmountChildrenFn</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>~UnmountChildrenFn</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>void</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
@@ -795,8 +795,8 @@
 <tfoot>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Returns</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HostElement</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HostElement | null</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tfoot>
 </table>
