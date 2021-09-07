@@ -85,7 +85,7 @@ class AsciiDocGenerator {
     const { type, name, summary } = this._item
     this._output.push(`= ${type} ${name}`)
     this._output.push('')
-    this._output.push(this._replaceXrefInMarkdown(summary ?? ''))
+    this._output.push(this._formatMarkdownString(summary ?? ''))
     this._output.push('')
     if (type === 'package' || type === 'enum') {
       this._generateModuleOrEnum()
@@ -128,7 +128,7 @@ class AsciiDocGenerator {
     this._output.push('')
     this._output.push('========')
     this._output.push('')
-    this._output.push(this._replaceXrefInMarkdown(summary ?? ''))
+    this._output.push(this._formatMarkdownString(summary ?? ''))
     this._output.push('')
     if ('syntax' in member && member.syntax) {
       this._generateSyntax(member.syntax)
@@ -207,15 +207,15 @@ class AsciiDocGenerator {
         const { id, type, description } = parameter
         this._output.push(``)
         this._output.push(`m|${id}`)
-        this._output.push(`m|${this._replaceXrefInType(type as string)}`)
-        this._output.push(`|${this._replaceXrefInMarkdown(description || '')}`)
+        this._output.push(`m|${this._formatTypeString(type as string)}`)
+        this._output.push(`|${this._formatMarkdownString(description || '')}`)
       }
       if (returnValue) {
         const { type, description } = returnValue
         this._output.push(``)
         this._output.push(`s|Returns`)
-        this._output.push(`m|${this._replaceXrefInType(type as string)}`)
-        this._output.push(`|${this._replaceXrefInMarkdown(description || '')}`)
+        this._output.push(`m|${this._formatTypeString(type as string)}`)
+        this._output.push(`|${this._formatMarkdownString(description || '')}`)
       }
       this._output.push('|===')
     }
@@ -258,13 +258,15 @@ class AsciiDocGenerator {
     }
   }
 
-  _replaceXrefInType(text: string) {
-    return text.replace(/<xref uid="([^"]+)"\s*\/>/g, (match, uid) => {
-      return this._resolveXref(uid)
-    })
+  _formatTypeString(text: string) {
+    return text
+      .replace(/[|~]/, '\\$&')
+      .replace(/<xref uid="([^"]+)"\s*\/>/g, (match, uid) => {
+        return this._resolveXref(uid)
+      })
   }
 
-  _replaceXrefInMarkdown(text: string) {
+  _formatMarkdownString(text: string) {
     return text
       .replace(
         /\[([^\]]+)\]\(xref:((?:[^\s()]|[(][^)]*[)])*)\)/g,
