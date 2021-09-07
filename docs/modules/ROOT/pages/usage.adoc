@@ -50,6 +50,17 @@ First, install these dependencies:
 /tmp/
 ----
 
+.tsconfig.json
+[source,json]
+----
+{
+  "compilerOptions": {
+    "declarationMap": true <1>
+  }
+}
+----
+<1> Add this line.
+
 [#api-extractor]
 == Generate doc model files
 
@@ -79,7 +90,7 @@ It will also generate a https://docs.antora.org/antora/2.3/navigation/files-and-
 nav:
   - modules/api/nav.adoc <1>
 ----
-<1> Add this line
+<1> Add this line.
 
 [#package-script]
 == Set up package.json
@@ -94,7 +105,7 @@ To generate the documentation easily, you can add the following to your `package
   }
 }
 ----
-<1> Add this line
+<1> Add this line.
 
 Now, you can run `yarn api` to regenerate the documentation.
 
