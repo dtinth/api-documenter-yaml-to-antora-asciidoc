@@ -21,5 +21,8 @@ Basically, if you use this tool, **you will be creating http://boringtechnology.
 
 |Call signatures are not documented.
 |Use methods instead.
+
+|Namespaces are not supported.
+|Use classes with static methods instead.
 |===
 
