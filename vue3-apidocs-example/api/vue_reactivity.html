@@ -304,67 +304,118 @@
 <div class="sect1">
 <h2 id="_classes"><a class="anchor" href="#_classes"></a>Classes</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="vue_reactivity_EffectScope_class.html" class="page">EffectScope</a></p>
-</li>
-<li>
-<p><a href="vue_reactivity_ReactiveEffect_class.html" class="page">ReactiveEffect</a></p>
-</li>
-</ul>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="vue_reactivity_EffectScope_class.html" class="page">EffectScope</a></strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="vue_reactivity_ReactiveEffect_class.html" class="page">ReactiveEffect</a></strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_interfaces"><a class="anchor" href="#_interfaces"></a>Interfaces</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="vue_reactivity_ComputedRef_interface.html" class="page">ComputedRef</a></p>
-</li>
-<li>
-<p><a href="vue_reactivity_DebuggerOptions_interface.html" class="page">DebuggerOptions</a></p>
-</li>
-<li>
-<p><a href="vue_reactivity_ReactiveEffectOptions_interface.html" class="page">ReactiveEffectOptions</a></p>
-</li>
-<li>
-<p><a href="vue_reactivity_ReactiveEffectRunner_interface.html" class="page">ReactiveEffectRunner</a></p>
-</li>
-<li>
-<p><a href="vue_reactivity_Ref_interface.html" class="page">Ref</a></p>
-</li>
-<li>
-<p><a href="vue_reactivity_RefUnwrapBailTypes_interface.html" class="page">RefUnwrapBailTypes</a></p>
-</li>
-<li>
-<p><a href="vue_reactivity_WritableComputedOptions_interface.html" class="page">WritableComputedOptions</a></p>
-</li>
-<li>
-<p><a href="vue_reactivity_WritableComputedRef_interface.html" class="page">WritableComputedRef</a></p>
-</li>
-</ul>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="vue_reactivity_ComputedRef_interface.html" class="page">ComputedRef</a></strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="vue_reactivity_DebuggerOptions_interface.html" class="page">DebuggerOptions</a></strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="vue_reactivity_ReactiveEffectOptions_interface.html" class="page">ReactiveEffectOptions</a></strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="vue_reactivity_ReactiveEffectRunner_interface.html" class="page">ReactiveEffectRunner</a></strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="vue_reactivity_Ref_interface.html" class="page">Ref</a></strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="vue_reactivity_RefUnwrapBailTypes_interface.html" class="page">RefUnwrapBailTypes</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This is a special exported interface for other packages to declare additional types that should bail out for ref unwrapping. For example @vue/runtime-dom can declare it like so in its d.ts:</p>
+<p class="tableblock">```ts
+declare module '@vue/reactivity' {
+  export interface RefUnwrapBailTypes {
+    runtimeDOMBailTypes: Node</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Window
+  }
+}
+<code>`</code>
+Note that api-extractor somehow refuses to include <code>declare module</code> augmentations in its generated d.ts, so we have to manually append them to the final generated d.ts in our build process.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="vue_reactivity_WritableComputedOptions_interface.html" class="page">WritableComputedOptions</a></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="vue_reactivity_WritableComputedRef_interface.html" class="page">WritableComputedRef</a></strong></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_enumerations"><a class="anchor" href="#_enumerations"></a>Enumerations</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="vue_reactivity_ReactiveFlags_enum.html" class="page">ReactiveFlags</a></p>
-</li>
-<li>
-<p><a href="vue_reactivity_TrackOpTypes_enum.html" class="page">TrackOpTypes</a></p>
-</li>
-<li>
-<p><a href="vue_reactivity_TriggerOpTypes_enum.html" class="page">TriggerOpTypes</a></p>
-</li>
-</ul>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="vue_reactivity_ReactiveFlags_enum.html" class="page">ReactiveFlags</a></strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="vue_reactivity_TrackOpTypes_enum.html" class="page">TrackOpTypes</a></strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="vue_reactivity_TriggerOpTypes_enum.html" class="page">TriggerOpTypes</a></strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
