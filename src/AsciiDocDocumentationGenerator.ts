@@ -83,9 +83,12 @@ class AsciiDocGenerator {
 
   _generate() {
     const { type, name, summary } = this._item
+    const remarks = 'remarks' in this._item ? this._item.remarks : ''
     this._output.push(`= ${type} ${name}`)
     this._output.push('')
     this._output.push(this._formatMarkdownString(summary ?? ''))
+    this._output.push('')
+    this._output.push(this._formatMarkdownString(remarks ?? ''))
     this._output.push('')
     if (type === 'package' || type === 'enum') {
       this._generateModuleOrEnum()
@@ -123,12 +126,15 @@ class AsciiDocGenerator {
 
   _generateMember(member: Item) {
     const { name, summary, uid } = member
+    const remarks = 'remarks' in member ? member.remarks : ''
     this._output.push(`[id="${this._slugMapping.getSlug(uid)}"]`)
     this._output.push(`=== ${name}`)
     this._output.push('')
     this._output.push('========')
     this._output.push('')
     this._output.push(this._formatMarkdownString(summary ?? ''))
+    this._output.push('')
+    this._output.push(this._formatMarkdownString(remarks ?? ''))
     this._output.push('')
     if ('syntax' in member && member.syntax) {
       this._generateSyntax(member.syntax)
@@ -171,13 +177,21 @@ class AsciiDocGenerator {
 
   _generateSummaryListing(title: string, items: string[] | undefined) {
     this._generateListing(title, items, (array) => {
+      this._output.push(`[%header,cols="1,2",caption=""]`)
+      this._output.push('|===')
+      this._output.push('|Name |Summary')
       for (const uid of array) {
         const item = this._catalog.get(uid)
         if (item) {
           const slug = this._slugMapping.getSlug(uid)
-          this._output.push(`* xref:${slug}.adoc[${item.name}]`)
+          this._output.push(``)
+          this._output.push(`s|xref:${slug}.adoc[${item.name}]`)
+          this._output.push(
+            `|${this._formatMarkdownString(item.summary || '')}`,
+          )
         }
       }
+      this._output.push('|===')
     })
   }
 
