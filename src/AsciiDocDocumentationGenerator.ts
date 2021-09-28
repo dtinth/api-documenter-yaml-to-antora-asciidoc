@@ -283,9 +283,14 @@ class AsciiDocGenerator {
   _formatMarkdownString(text: string) {
     return text
       .replace(
-        /\[([^\]]+)\]\(xref:((?:[^\s()]|[(][^)]*[)])*)\)/g,
-        (match, name, uid) => {
-          return this._resolveXref(decodeURIComponent(uid))
+        /\[([^\]]+)\]\(((?:[^\s()]|[(][^)]*[)])*)\)/g,
+        (match, name, href) => {
+          if (href.startsWith('xref:')) {
+            const uid = href.substring(5)
+            return this._resolveXref(decodeURIComponent(uid))
+          } else {
+            return `${href}[${name}]`
+          }
         },
       )
       .replace(/<!-- -->/g, '')
