@@ -5,6 +5,11 @@ Some of them are imposed by `api-extractor` and `api-documenter`, and some are i
 
 Basically, if you use this tool, **you will be creating http://boringtechnology.club/[boring], object-oriented APIs** with classes, interfaces and functions. You will not be using all the fancy TypeScript constructs.
 
+Quoting https://github.com/microsoft/rushstack/issues/3002#issuecomment-1007063608[a comment from a GitHub Issue]:
+
+[quote]
+For the large corporate code bases that inspired API Extractor, historically we have tended to prefer standard coding stereotypes over flexible free-form expressions. For example, "a function" is a friendlier concept than "a constant variable whose data type is a lambda." And "an interface" is a friendlier concept than "a type signature describing a non-nested object without any alternatives." Building your API from standardized bricks makes it easier for beginners to learn, easier to organize the docs, and easier to talk about when providing support.
+
 [%header,cols="2,2a"]
 |===
 |Limitation
